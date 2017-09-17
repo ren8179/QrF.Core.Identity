@@ -1,0 +1,11 @@
+﻿@page
+@model AuthModel
+@{
+    ViewData["Title"] = "ResourceOwnerPassword Client";
+}
+
+<p>令牌信息： @Model.TokenJson</p>
+<p>获取令牌失败：@Model.TokenError</p>
+<hr />
+<p>接口信息： @Model.ApiContent</p>
+<p>接口访问失败： @Model.ApiError</p>

@@ -1,0 +1,12 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/QrF.Core.Api/bin/Debug/netcoreapp2.0
+/QrF.Core.Api/obj
+/QrF.Core.Client/bin/Debug/netcoreapp2.0
+/QrF.Core.Client/obj
+/QrF.Core.IdentityServer/bin/Debug/netcoreapp2.0
+/QrF.Core.IdentityServer/obj
+/QrF.Core.WebClient/bin/Debug/netcoreapp2.0
+/QrF.Core.WebClient/obj
