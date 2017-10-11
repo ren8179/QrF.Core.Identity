@@ -32,13 +32,13 @@ namespace QrF.Core.Api
 
             #region use IdentityServer4.AccessTokenValidation
 
-            services
-                .AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
-                .AddIdentityServerAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme, (option) =>
+            services.AddAuthentication("Bearer")
+                .AddIdentityServerAuthentication(options =>
                 {
-                    option.Authority = "http://localhost:5000";//identityserver4地址
-                    option.RequireHttpsMetadata = false;//使用https
-                    option.ApiName = "api1";//api scope
+                    options.Authority = "http://localhost:5000";
+                    options.RequireHttpsMetadata = false;
+
+                    options.ApiName = "api1";
                 });
 
             #endregion
